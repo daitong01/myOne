@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base"
+    android:gravity="center"
+    >
+    <TextView 
+        android:id="@+id/in_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/in_the_login"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_dark"
+        
+        />
+    
+    
+    
+    
+</LinearLayout>

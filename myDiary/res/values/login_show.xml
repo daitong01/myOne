@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <resources>
+        <string name="in_the_login">登录中......</string>
+        <string name="login_user_name_default">请输入用户名</string>
+        <string name="login_succee">登录成功！</string>
+    </resources>

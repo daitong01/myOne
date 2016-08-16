@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/base"
+     >
+   
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+        <FrameLayout
+            android:id="@+id/username_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/input_user"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/login_user_name_default"
+                android:textSize="18sp"
+                android:visibility="visible"
+                android:layout_marginLeft="30dip"
+				android:singleLine="true"
+				android:cursorVisible="true"
+				android:inputType="text"
+				android:textCursorDrawable="@drawable/color_cursor"
+				android:textColor = "#0D0D0D"
+                 />
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"               
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/user"
+                android:visibility="visible" />
+            
+            
+            <Button 
+                android:id="@+id/bt_username_clear"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/close"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/usercode_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_layout"
+            android:layout_marginTop="6dp"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"   
+                android:inputType="textPassword"
+                android:paddingRight="60dp"
+                android:maxLength="20"
+                android:layout_marginLeft="30dip"
+				android:cursorVisible="true" 
+				android:textCursorDrawable="@drawable/color_cursor"
+				android:visibility="visible"
+				android:textColor = "#0D0D0D" 
+				              >
+            </EditText>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="7dp"               
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/lock" />
+               <Button 
+                android:id="@+id/bt_pwd_eye"
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:background="@drawable/eye4"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+               <Button 
+                android:id="@+id/bt_pwd_clear"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/close"
+                android:visibility="visible"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="33dp"
+                />
+        </FrameLayout>
+  
+        <Button
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/usercode_layout"
+            android:layout_marginTop="30dp"
+            android:background="#ff336699"
+            android:textColor="@android:color/white"
+            
+            android:gravity="center"
+            android:text="登录" />
+        <Button
+            android:id="@+id/login_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/login"
+            android:layout_below="@id/login"
+            android:background="#00000000"            
+            android:text="忘记密码"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+             />
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/login"
+            android:layout_below="@id/login"
+            android:background="#00000000"
+            android:gravity="left|center_vertical"
+            android:text="注册"
+            android:textSize="16sp"            
+            android:visibility="visible"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/remember_layout000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+        <Button
+            android:id="@+id/registfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="AnyLife,Make the world a better place."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>
